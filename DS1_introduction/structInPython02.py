@@ -1,4 +1,5 @@
 """
+   python 内置的类型 性能分析  数据结构
     1、列表list
     生成：+ , append, insert(index,值)，列表生成式[i for i in range(10)]， 类
     删： pop()  del(0)
@@ -46,7 +47,10 @@ pop_end = Timer("x.pop()","from __main__ import x")
 print("pop_end ",pop_end.timeit(number=1000), "seconds")
 
 
+
 #python扩展数据类型
+
+
 from pythonds.basic.stack import Stack #栈
 from pythonds.basic.queue import Queue
 from pythonds.basic.deque import Deque
